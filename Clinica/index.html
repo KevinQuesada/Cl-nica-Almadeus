@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Clínica</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Convergence&family=Lato:wght@300;400;700;900&family=Mukta:wght@300;400;600;700;800&family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="Contenedor">
+            <p class="logo">Clínica Almadeus</p>
+            <nav>
+                <a href="#Citas">Inicio</a>
+                <a href="#Bienvenidos">Servicios</a>
+                <a href="#Especialidades">Especialidades</a>
+                <a href="#Contacto">Pedir cita</a>
+            </nav>
+        </div>
+    </header>
+
+    <section id="Citas">
+        <h1>Bienvenidos a Clínica Almadeus<br>Dedicados al tratamiento integral de su salud</h1>
+        <form action="#Contacto">
+            <button>Pedir Cita</button>
+        </form>
+
+    </section>
+
+    <section id="Bienvenidos">
+        <div class="Contenedor">
+            <div class="img-Contenedor"></div>
+            <div class="texto">
+
+                <h2>Nuestros servicios</h2>
+                <p>✔️Emergencias Medicas<br>
+                   ✔️ Ambulancias<br>
+                   ✔️Maternidad<br>
+                   ✔️Farmacia<br>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="Especialidades">
+        <div class="Contenedor">
+            <h2>Especialidades</h2>
+            <div class="Contenedor-carta">
+                <div class="carta">
+                    <h3>Pediatría</h3>
+                    <p>La Pediatría es la especialidad médica que se ocupa del estudio del crecimiento y el desarrollo de los niños hasta la adolescencia, así como del tratamiento de sus enfermedades.</p>
+                    <form action="https://www.aeped.es/noticias/pediatria-y-sus-areas-especificas-una-especialidad-troncal#:~:text=La%20pediatría%20estudia%20al%20niño,distinta%20a%20las%20del%20adulto.">
+                        <button>+ Info</button>
+                    </form>
+                </div>
+                <div class="carta">
+                    <h3>Cardiología</h3>
+                    <p>Rama de la medicina que se especiliza en el diagnóstico y tratamiento de enfermedades del corazón, los vasos sanguíneos y el sistema circulatorio.</p>
+                    <form action="https://www.texasheart.org/heart-health/heart-information-center/topics/que-es-un-cardiologo/#:~:text=La%20cardiología%20es%20un%20campo,prevención%20de%20las%20enfermedades%20cardiovasculares.">
+                        <button>+ Info</button>
+                    </form>
+                </div>
+                <div class="carta">
+                    <h3>Dermatología</h3>
+                    <p>Especialidad médica destinada al estudio, conocimiento, diagnóstico y tratamiento de todas aquellas patologías o afecciones de la piel, el órgano más extenso del cuerpo.</p>
+                    <form action="https://dermaten.es/que-es-la-dermatologia/">
+                        <button>+ Info</button>
+                    </form>
+                </div>  
+            </div>
+        </div>
+    </section>
+    <br><br>
+
+    <section id="Contacto">
+        <h3>Solicite su cita</h3>
+        <p>Importante: Su cita quedará sujeta a disponibilidad del<br> personal de la clínica sele estará contactándolo para confirmar o asignar una nueva cita.</p>
+        <br>
+        <label>
+            <input type="text" name="txtNombre" placeholder="Nombre Completo" >
+            <input type="text" name="celular" placeholder="Numero de telefono">
+        </label>
+        <br>
+        <label>
+            <input type="text" name="txtNombre" placeholder="Correo electronico">
+            <input type="text" name="txtNombre" placeholder="Fecha de solicitud de cita">
+        </label>
+        <br>
+
+        <label>
+            <select name="Especialidades" placeholder="Fecha de solicitud de cita"> 
+                <option>Pediatría</option>
+                <option>Cardiología</option>
+                <option>Dermatología</option>
+            </select>
+        </label>
+        <br>
+        <label>
+            <textarea name="comentarios" rows="10" cols="40" placeholder="Mensaja"></textarea>
+        </label>
+        <label>
+            <input type="Submit" name="Enviar">
+            <input type="Reset" name="Borrar">
+        </label>
+    </section>
+
+    <footer>
+        <div class="Contenedor">
+            <p>&copy; Kevin Quesada 2022</p>
+        </div>
+    </footer>
+</body>
+</html>

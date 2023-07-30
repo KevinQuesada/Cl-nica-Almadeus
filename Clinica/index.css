@@ -1,0 +1,355 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+li{ font-size: 1.25em;}
+
+button{
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    color: white;
+    background-color: rgb(89, 39, 168);
+}
+
+button:hover{
+    background-color: rgba(124, 57, 223, 0.774);
+}
+
+.Contenedor {
+    max-width: 1400px;
+    margin: auto;
+}
+
+header{
+    background-color: rgb(245,245,245);
+    
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: rgba(124, 57, 223, 0.774);
+    font-size: 1.6em;
+}
+
+header .Contenedor{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover{
+    color: rgba(124, 57, 223, 0.774);
+}
+
+#Citas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("./img/Fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#Citas h1{
+    color: white;
+}
+
+#Citas button{
+    font-size: 1.2em;
+}
+
+#Bienvenidos .Contenedor{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#Especialidades{
+    background-color: rgb(30,30,30);
+    color: white;
+    text-align: center;
+}
+
+#Especialidades .Contenedor{
+    padding: 150px 12px;
+}
+
+#Especialidades h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#Especialidades p{
+    display: none;
+}
+
+#Especialidades .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 60px 0px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("./img/pediatria.jpg");
+
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("./img/cardiologia.jpg");
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("./img/dermatologia.jpg");
+
+}
+
+#Caracteristicas .Contenedor{
+    text-align: center;
+    padding: 250px 12px;
+}
+
+#Caracteristicas li{
+    margin: 16px 0px;
+    font-weight: bold;
+}
+
+#Contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30,30,30);
+    color: white;
+    height: 100vh;
+}
+
+#Contacto h2{
+    font-size: 5vw;
+}
+
+#Contacto button{
+    font-size: 3vw;
+}
+
+footer{
+    background-color: rgb(230,230,230);
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(100,100,100);
+}
+
+footer .Contenedor{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width:  720px){
+    header{
+        position: fixed;
+        width: 100%;
+    }
+
+    header .Contenedor{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #Citas h1{
+        font-size: 3em;
+    }
+
+    #Bienvenidos .Contenedor{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #Bienvenidos .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #Bienvenidos h2{
+        margin-top: 0px;
+    }
+
+    #Bienvenidos .img-Contenedor{
+        background-image: url("./img/1.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 600px;
+        width: 800px; 
+    }
+
+    #Especialidades .Contenedor-carta{
+        display: flex;
+        justify-content: center;
+    }
+
+    #Especialidades p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #Especialidades h2{
+        font-size: 4em;
+    }
+
+    #Especialidades h3{
+        margin-top: 0;
+    }
+
+    #Especialidades .carta{
+        padding: 50px;
+        background-size: 100% 150px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgb(50, 50, 50);
+        box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    }
+
+    .carta:first-child{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("./img/pediatria.jpg");
+
+    }
+
+    .carta:nth-child(2){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("./img/cardiologia.jpg");
+    }
+
+    .carta:nth-child(3){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("./img/dermatologia.jpg");
+
+    }
+
+    #caracteristicas{
+        background-image: url("./img/cardiologia.jpg");
+        background-repeat: no-repeat;
+        background-size: 500px 400px;
+        background-position: calc(100vw - 500px) 120px;
+    }
+
+    #caracteristicas .Contenedor{
+        text-align: initial;
+    }
+
+    #caracteristicas ul{
+        margin-left: 100px;
+    }
+
+    #Contacto h2{
+        font-size: 5em;
+    }
+
+    #Contacto button{
+        font-size: 2em;
+    }
+
+    footer .Contenedor{
+        justify-content: flex-end;
+    }
+}
+
+@media (min-width: 1200px) {
+    #caracteristicas{
+        background-position-x: calc(200vw - 800px);
+    }
+}
+
+.Contacto p{
+    font-size: bold;
+}
+
+img{
+    width: 200px;
+}
